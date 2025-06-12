@@ -70,7 +70,7 @@ for i in *Lib-4*; do  echo $i ; zcat $i | head |  grep -i 'gatagagaac' ; done
 
 The trimming required: `GGATGGCTGAAGGTGACAGAGCCTCTG` 
 
-Your trimming command line should look like?
+Your trimming command line should look like
 
 ```
 fastx_trimmer -Q33 -f29 -v -i <(zcat CDH1-B1-Lib-4_L4_2.fq.gz ) -o CDH1-B1-Lib-4_L4_2_trimmed.fastq & 
